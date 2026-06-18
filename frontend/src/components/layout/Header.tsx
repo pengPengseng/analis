@@ -1,5 +1,4 @@
-import { mockMarketBanner } from '@/lib/mock-api'
-import { Activity } from 'lucide-react'
+
 
 export function Header() {
   const { ihsg, change, sentiment } = mockMarketBanner;
