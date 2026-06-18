@@ -41,7 +41,7 @@ export function Charts() {
               <Tooltip 
                 contentStyle={{ backgroundColor: '#0f172a', borderColor: '#1e293b', borderRadius: '8px', color: '#f8fafc' }}
                 itemStyle={{ color: '#f8fafc' }}
-                formatter={(value: number) => `Rp ${value.toLocaleString('id-ID')}`}
+                formatter={(value: any) => `Rp ${Number(value).toLocaleString('id-ID')}`}
               />
             </PieChart>
           </ResponsiveContainer>
@@ -59,7 +59,7 @@ export function Charts() {
               <Tooltip 
                 cursor={{ fill: '#1e293b' }}
                 contentStyle={{ backgroundColor: '#0f172a', borderColor: '#1e293b', borderRadius: '8px' }}
-                formatter={(value: number) => `Rp ${value.toLocaleString('id-ID')}`}
+                formatter={(value: any) => `Rp ${Number(value).toLocaleString('id-ID')}`}
               />
               <Bar dataKey="Pendapatan" fill="#10b981" radius={[4, 4, 0, 0]} />
               <Bar dataKey="Pengeluaran" fill="#f43f5e" radius={[4, 4, 0, 0]} />
